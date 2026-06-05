@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Emmanuel Ruiz - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+    :root {
+        --principal: #6c63ff;
+        --fondo: #0f0f1a;
+        --fondo2: #1a1a2e;
+        --texto: #ffffff;
+        --texto2: #a8a8b3;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--fondo);
+        color: var(--texto);
+    }
+
+    /* HEADER */
+    header {
+        background-color: var(--fondo2);
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    header h1 { font-size: 48px; color: var(--principal); }
+    header p { font-size: 20px; color: var(--texto2); margin-top: 10px; }
+
+    /* SECCIONES */
+    section {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+        color: var(--principal);
+        margin-bottom: 16px;
+        border-bottom: 1px solid var(--principal);
+        padding-bottom: 8px;
+    }
+
+    p { color: var(--texto2); line-height: 1.8; }
+
+    /* HABILIDADES */
+    .habilidades {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    .habilidad {
+        background-color: var(--fondo2);
+        border: 1px solid var(--principal);
+        color: var(--principal);
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 14px;
+    }
+
+    /* PROYECTOS */
+    .proyecto {
+        background-color: var(--fondo2);
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 16px;
+    }
+
+    .proyecto h3 { color: var(--texto); margin-bottom: 8px; }
+    .proyecto p { font-size: 14px; }
+
+    .btn {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 8px 16px;
+        background-color: var(--principal);
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 13px;
+        transition: transform 0.2s;
+    }
+
+    .btn:hover { transform: scale(1.05); }
+
+    /* CONTACTO */
+    .contacto {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .contacto a {
+        color: var(--principal);
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    .contacto a:hover { text-decoration: underline; }
+
+    footer {
+        text-align: center;
+        padding: 30px;
+        color: var(--texto2);
+        font-size: 13px;
+        margin-top: 40px;
+    }
+    </style>
+</head>
+<body>
+
+    <header>
+    <h1>Emmanuel Ruiz</h1>
+    <p>Estudiante de Ingeniería de Diseño de Software y Redes</p>
+    <p>Chiapas, México · Buscando primer trabajo en tech</p>
+    </header>
+
+    <section>
+    <h2>Sobre mí</h2>
+    <p>Soy estudiante de Ingeniería de Diseño de Software y Redes con enfoque en desarrollo web, Python y bases de datos. Estoy construyendo mi portafolio activamente y busco mi primera oportunidad en el sector tecnológico.</p>
+    </section>
+
+    <section>
+    <h2>Habilidades</h2>
+    <div class="habilidades">
+        <span class="habilidad">Python</span>
+        <span class="habilidad">HTML</span>
+        <span class="habilidad">CSS</span>
+        <span class="habilidad">SQL</span>
+        <span class="habilidad">Git</span>
+        <span class="habilidad">GitHub</span>
+        <span class="habilidad">SQLite</span>
+    </div>
+    </section>
+
+    <section>
+    <h2>Proyectos</h2>
+
+    <div class="proyecto">
+        <h3>Calculadora Python</h3>
+        <p>Calculadora de operaciones básicas desarrollada en Python con manejo de variables y funciones.</p>
+        <a class="btn" href="https://github.com/ruizespinosaemmanuel-bit/Mi-primer-repositorio" target="_blank">Ver en GitHub</a>
+    </div>
+
+    <div class="proyecto">
+        <h3>Agenda con Base de Datos</h3>
+        <p>Aplicación de agenda que guarda, lista y elimina contactos usando Python y SQLite.</p>
+        <a class="btn" href="https://github.com/ruizespinosaemmanuel-bit/Mi-primer-repositorio" target="_blank">Ver en GitHub</a>
+    </div>
+
+    <div class="proyecto">
+        <h3>Página Web de Recetas</h3>
+        <p>Página web con HTML y CSS que muestra ingredientes de recetas con diseño responsive.</p>
+        <a class="btn" href="https://ruizespinosaemmanuel-bit.github.io/Mi-primer-repositorio/prueba.html" target="_blank">Ver en vivo</a>
+    </div>
+
+    </section>
+
+    <section>
+    <h2>Contacto</h2>
+    <div class="contacto">
+        <a href="https://github.com/ruizespinosaemmanuel-bit" target="_blank">GitHub</a>
+        <a href="mailto:ruizespinosaemmanuel@email.com">Email</a>
+    </div>
+    </section>
+
+    <footer>
+    <p>Emmanuel Ruiz © 2026 · Hecho con HTML y CSS</p>
+    </footer>
+
+</body>
+</html>
