@@ -121,6 +121,20 @@
     <p>Estudiante de Ingeniería de Diseño de Software y Redes</p>
     <p>Chiapas, México · Buscando primer trabajo en tech</p>
     </header>
+    <br>
+<button onclick="toggleModo()" 
+    style="margin:10px; padding:10px 20px; background:#6c63ff; 
+    color:white; border:none; border-radius:8px; cursor:pointer; font-size:14px">
+    🌙 Modo claro/oscuro
+</button>
+
+<button onclick="contarClic()" 
+    style="margin:10px; padding:10px 20px; background:#6c63ff; 
+    color:white; border:none; border-radius:8px; cursor:pointer; font-size:14px">
+    👋 Saludarme
+</button>
+
+<p id="contador" style="color:#6c63ff; margin-top:10px">Visitas: 0</p>
 
     <section>
     <h2>Sobre mí</h2>
@@ -176,4 +190,30 @@
     </footer>
 
 </body>
+<script>
+  // 1. Mensaje de bienvenida
+    window.onload = function() {
+    console.log("Bienvenido al portafolio de Emmanuel")
+        }
+
+  // 2. Modo claro/oscuro
+    function toggleModo() {
+    const body = document.body
+    if (body.style.backgroundColor === "white") {
+        body.style.backgroundColor = "#0f0f1a"
+        body.style.color = "white"
+    } else {
+        body.style.backgroundColor = "white"
+        body.style.color = "black"
+    }
+    }
+
+  // 3. Contador de clics
+    let clics = 0
+    function contarClic() {
+    clics++
+    document.getElementById("contador").textContent = 
+        "Visitas: " + clics
+    }
+</script>
 </html>
