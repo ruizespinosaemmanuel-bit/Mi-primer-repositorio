@@ -2,19 +2,75 @@
 <html>
     <head>
     <title>Las Galletas de la Abuela</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
+    :root {
+        --fondo: #0f0f1a;
+        --fondo2: #1a1a2e;
+        --texto: #ffffff;
+        --texto2: #a8a8b3;
+
+    }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
-        background-color: black;
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--fondo);
+        color: var(--texto);
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
-        padding: -10px;
+        padding: -100px;
         margin: 0;
         }
+        
+        /*HEADER*/
+        header {
+        background-color: var(--fondo2);    
+        padding: 60px 20px;
+        text-align: center;
+        
+    }
 
+    header h1 { font-size: 48px; color: var(--principal); }
+    header p { font-size: 20px; color: var(--texto2); margin: 20px 0; }
+
+    /* SECCIONES */
+    section {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    color: var(--principal);
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--principal);
+    padding-bottom: 8px;
+    }
+
+    p { color: var(--texto2); line-height: 1.8; }
+
+    /* HABILIDADES */
+    .habilidades {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 10px;    
+    }
+    .habilidad {
+        background-color: var(--fondo2);
+        border: 1px solid var(--principal);
+        color: var(--principal);
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 14px;
+    }
         .tarjeta {
-        background-color: #1a1a2e;
+        background-color: var(--fondo2);
         border-radius: 12px;
         padding: 30px 40px;
         width: 350px;
@@ -22,10 +78,10 @@
         }
 
         h1 {
-        color: beige;
+        color: var(--texto);
         }
 
-        ul {
+        ul { 
         text-align: left;
         display: inline-block;
         color: white;
@@ -48,6 +104,8 @@
     <div class="tarjeta">
         <h1>Las Galletas de la Abuela</h1>
         <ul>
+        </ul>
+        <ul id="ingredientes">
         <li>1 taza de harina</li>
         <li>1/2 taza de azúcar</li>
         <li>1/2 taza de mantequilla</li>
@@ -55,7 +113,25 @@
         <li>1 cucharadita de esencia de vainilla</li>
         </ul>
         <br>
-        <button>Receta completa</button>
+        <button id="btn" onclick="toggleReceta()">Ver receta completa</button>
+    
     </div>
     </body>
+    <script>
+    // JavaScript para mostrar/ocultar la receta
+    document.getElementById("ingredientes").style.display = "none";
+    
+    function toggleReceta() {
+        const ingredientes = document.getElementById('ingredientes');
+        const btn = document.getElementById('btn');
+        
+        if (ingredientes.style.display === 'none') {
+            ingredientes.style.display = 'block';
+            btn.textContent = 'Ocultar receta';
+        } else {
+            ingredientes.style.display = 'none';
+            btn.textContent = 'Ver receta completa';
+        }
+    }
+</script>
 </html>

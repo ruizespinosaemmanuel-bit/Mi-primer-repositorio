@@ -1,0 +1,212 @@
+
+<h2 class="sr-only">Plan semanal de aprendizaje en programación para los primeros 3 meses</h2>
+<style>
+.phase-header { font-size: 13px; font-weight: 500; padding: 6px 12px; border-radius: var(--border-radius-md); margin: 0 0 12px; display: inline-block; }
+.week-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 14px 16px; margin-bottom: 10px; }
+.week-title { font-size: 14px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 8px; display: flex; align-items: center; gap: 8px; }
+.week-badge { font-size: 11px; padding: 2px 8px; border-radius: 20px; font-weight: 400; }
+.task-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 5px; }
+.task-list li { font-size: 13px; color: var(--color-text-secondary); display: flex; align-items: flex-start; gap: 8px; line-height: 1.5; }
+.task-list li i { font-size: 15px; margin-top: 1px; flex-shrink: 0; }
+.resource { font-size: 12px; color: var(--color-text-tertiary); margin-top: 8px; padding-top: 8px; border-top: 0.5px solid var(--color-border-tertiary); display: flex; align-items: center; gap: 6px; }
+.phase-block { margin-bottom: 28px; }
+.ask-btn { margin-top: 8px; font-size: 12px; padding: 5px 12px; border-radius: var(--border-radius-md); border: 0.5px solid var(--color-border-secondary); background: transparent; color: var(--color-text-secondary); cursor: pointer; }
+.ask-btn:hover { background: var(--color-background-secondary); }
+.tip-box { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 10px 14px; font-size: 13px; color: var(--color-text-secondary); margin-bottom: 20px; display: flex; gap: 10px; align-items: flex-start; }
+.tip-box i { font-size: 16px; margin-top: 1px; flex-shrink: 0; color: var(--color-text-info); }
+</style>
+
+<div style="padding: 1rem 0;">
+
+<div class="tip-box">
+  <i class="ti ti-clock" aria-hidden="true"></i>
+  <span>30–60 min diarios son suficientes. Consistencia > cantidad. Los fines de semana: 1–2 horas de proyecto libre.</span>
+</div>
+
+<div class="phase-block">
+  <span class="phase-header" style="background: gray; color:#3C3489;">Fase 0 — Fundamentos · Semanas 1–4</span>
+
+  <div class="week-card">
+    <div class="week-title">
+      <i class="ti ti-number-1" aria-hidden="true"></i> Semana 1 — Entorno y primeros pasos
+      <span class="week-badge" style="background:lightgray; color:#534AB7;">Python</span>
+    </div>
+    <ul class="task-list">
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Instala Python, VS Code y Git</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Aprende variables, tipos de datos y print()</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Crea tu cuenta en GitHub y sube tu primer archivo</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Ejercicio: calculadora de suma/resta en terminal</li>
+    </ul>
+    <div class="resource"><i class="ti ti-link" aria-hidden="true"></i> freeCodeCamp · canal MoureDev en YouTube</div>
+    <button class="ask-btn" onclick="sendPrompt('Explícame cómo instalar Python y VS Code paso a paso')">Guía de instalación ↗</button>
+  </div>
+
+  <div class="week-card">
+    <div class="week-title">
+      <i class="ti ti-number-2" aria-hidden="true"></i> Semana 2 — Control de flujo
+      <span class="week-badge" style="background:black; color:#534AB7;">Python</span>
+    </div>
+    <ul class="task-list">
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Condicionales if / elif / else</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Bucles for y while</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Listas y diccionarios básicos</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Ejercicio: adivina el número (juego simple)</li>
+    </ul>
+    <div class="resource"><i class="ti ti-link" aria-hidden="true"></i> Exercism.io (Python track)</div>
+  </div>
+
+  <div class="week-card">
+    <div class="week-title">
+      <i class="ti ti-number-3" aria-hidden="true"></i> Semana 3 — Funciones y Git
+      <span class="week-badge" style="background:#EEEDFE; color:#534AB7;">Python + Git</span>
+    </div>
+    <ul class="task-list">
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Define y usa funciones con parámetros y return</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Aprende git add, commit, push, pull</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Crea un repositorio real en GitHub</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Ejercicio: lista de tareas en consola</li>
+    </ul>
+    <div class="resource"><i class="ti ti-link" aria-hidden="true"></i> learngitbranching.js.org</div>
+    <button class="ask-btn" onclick="sendPrompt('Enséñame los comandos básicos de Git con ejemplos')">Ver comandos Git ↗</button>
+  </div>
+
+  <div class="week-card">
+    <div class="week-title">
+      <i class="ti ti-number-4" aria-hidden="true"></i> Semana 4 — Terminal y SQL básico
+      <span class="week-badge" style="background:#EEEDFE; color:#534AB7;">Linux + SQL</span>
+    </div>
+    <ul class="task-list">
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Comandos básicos: ls, cd, mkdir, rm, cat</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>SQL: SELECT, WHERE, INSERT, CREATE TABLE</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Instala SQLite y crea tu primera base de datos</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Mini proyecto: agenda de contactos con Python + SQLite</li>
+    </ul>
+    <div class="resource"><i class="ti ti-link" aria-hidden="true"></i> sqlbolt.com · overthewire.org (Bandit)</div>
+  </div>
+</div>
+
+<div class="phase-block">
+  <span class="phase-header" style="background:#E6F1FB; color:#0C447C;">Fase 1 — Desarrollo web · Semanas 5–8</span>
+
+  <div class="week-card">
+    <div class="week-title">
+      <i class="ti ti-number-5" aria-hidden="true"></i> Semana 5 — HTML y CSS
+      <span class="week-badge" style="background:#E6F1FB; color:#185FA5;">Web</span>
+    </div>
+    <ul class="task-list">
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Estructura HTML: etiquetas, formularios, semántica</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>CSS: selectores, colores, fuentes, modelo de caja</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Flexbox y Grid para maquetación</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Proyecto: página personal / currículum en HTML</li>
+    </ul>
+    <div class="resource"><i class="ti ti-link" aria-hidden="true"></i> freeCodeCamp (Responsive Web Design)</div>
+  </div>
+
+  <div class="week-card">
+    <div class="week-title">
+      <i class="ti ti-number-6" aria-hidden="true"></i> Semana 6 — JavaScript básico
+      <span class="week-badge" style="background:#E6F1FB; color:#185FA5;">Web</span>
+    </div>
+    <ul class="task-list">
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Variables, funciones, eventos en el DOM</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>fetch() para consumir una API pública (ej. clima)</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Proyecto: página interactiva con JS</li>
+    </ul>
+    <div class="resource"><i class="ti ti-link" aria-hidden="true"></i> javascript.info</div>
+    <button class="ask-btn" onclick="sendPrompt('Dame un ejercicio de JavaScript para practicar el DOM')">Ejercicio de JS ↗</button>
+  </div>
+
+  <div class="week-card">
+    <div class="week-title">
+      <i class="ti ti-number-7" aria-hidden="true"></i> Semana 7 — React intro
+      <span class="week-badge" style="background:#E6F1FB; color:#185FA5;">Web</span>
+    </div>
+    <ul class="task-list">
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Conceptos: componentes, props, estado (useState)</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Crear app con Vite + React</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Proyecto: lista de tareas con React</li>
+    </ul>
+    <div class="resource"><i class="ti ti-link" aria-hidden="true"></i> react.dev (docs oficiales)</div>
+  </div>
+
+  <div class="week-card">
+    <div class="week-title">
+      <i class="ti ti-number-8" aria-hidden="true"></i> Semana 8 — Backend con Python (Flask)
+      <span class="week-badge" style="background:#E6F1FB; color:#185FA5;">Web</span>
+    </div>
+    <ul class="task-list">
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Crea una API REST básica con Flask</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Conecta tu API a SQLite (CRUD completo)</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Proyecto fullstack: React + Flask + base de datos</li>
+    </ul>
+    <div class="resource"><i class="ti ti-link" aria-hidden="true"></i> flask.palletsprojects.com</div>
+    <button class="ask-btn" onclick="sendPrompt('Cómo crear una API REST básica con Python y Flask')">Ver ejemplo Flask ↗</button>
+  </div>
+</div>
+
+<div class="phase-block">
+  <span class="phase-header" style="background:#E1F5EE; color:#085041;">Fase 2 — DevOps · Semanas 9–12</span>
+
+  <div class="week-card">
+    <div class="week-title">
+      <i class="ti ti-number-9" aria-hidden="true"></i> Semana 9 — Docker
+      <span class="week-badge" style="background:#E1F5EE; color:#0F6E56;">DevOps</span>
+    </div>
+    <ul class="task-list">
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Instala Docker Desktop</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Aprende: imágenes, contenedores, Dockerfile</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Dockeriza tu app Flask de la semana 8</li>
+    </ul>
+    <div class="resource"><i class="ti ti-link" aria-hidden="true"></i> docs.docker.com · Play with Docker</div>
+  </div>
+
+  <div class="week-card">
+    <div class="week-title">
+      <i class="ti ti-number-10" style="font-size:13px"></i> Semana 10 — Linux avanzado y bash
+      <span class="week-badge" style="background:#E1F5EE; color:#0F6E56;">DevOps</span>
+    </div>
+    <ul class="task-list">
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Permisos, procesos, variables de entorno</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Scripts bash para automatizar tareas</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Levanta un servidor con nginx en Linux</li>
+    </ul>
+    <div class="resource"><i class="ti ti-link" aria-hidden="true"></i> linuxcommand.org</div>
+  </div>
+
+  <div class="week-card">
+    <div class="week-title">
+      Semana 11 — CI/CD y GitHub Actions
+      <span class="week-badge" style="background:#E1F5EE; color:#0F6E56;">DevOps</span>
+    </div>
+    <ul class="task-list">
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Crea un pipeline básico con GitHub Actions</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Tests automáticos al hacer push</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Despliega tu app en Render o Railway (gratis)</li>
+    </ul>
+    <div class="resource"><i class="ti ti-link" aria-hidden="true"></i> docs.github.com/actions</div>
+    <button class="ask-btn" onclick="sendPrompt('Cómo crear mi primer pipeline de CI/CD con GitHub Actions')">Ver ejemplo CI/CD ↗</button>
+  </div>
+
+  <div class="week-card">
+    <div class="week-title">
+      Semana 12 — Cloud básico (AWS)
+      <span class="week-badge" style="background:#E1F5EE; color:#0F6E56;">DevOps</span>
+    </div>
+    <ul class="task-list">
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Crea cuenta AWS Free Tier</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Explora EC2, S3 y IAM básicos</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Despliega un contenedor Docker en la nube</li>
+      <li><i class="ti ti-check" style="color:var(--color-text-success)"></i>Empieza prep. para certificación AWS Cloud Practitioner</li>
+    </ul>
+    <div class="resource"><i class="ti ti-link" aria-hidden="true"></i> aws.amazon.com/es/training</div>
+  </div>
+</div>
+
+<div style="background: var(--color-background-secondary); border-radius: var(--border-radius-lg); padding: 14px 16px; font-size: 13px; color: var(--color-text-secondary); display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;">
+  <i class="ti ti-calendar" style="font-size:16px; margin-top:1px; flex-shrink:0; color:var(--color-text-primary)" aria-hidden="true"></i>
+  <span>Semanas 13–18: Ciberseguridad (TryHackMe · redes · CTF) · Semanas 19–24: Datos e IA (pandas · SQL avanzado · scikit-learn · Kaggle)</span>
+</div>
+
+<button style="width:100%; padding: 10px; font-size:13px; border-radius:var(--border-radius-md); border: 0.5px solid var(--color-border-secondary); background: transparent; color: var(--color-text-secondary); cursor:pointer; margin-top:4px;" onclick="sendPrompt('Arma el plan semanal de las semanas 13 a 24 con Ciberseguridad y Datos/IA')">Ver plan semanas 13–24 (seguridad y datos) ↗</button>
+
+</div>
