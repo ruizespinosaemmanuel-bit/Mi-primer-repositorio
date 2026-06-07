@@ -45,7 +45,7 @@
     }
 
     h2 {
-        font-size: 28px;
+        font-size: 24px;
     color: var(--principal);
     margin-bottom: 16px;
     border-bottom: 1px solid var(--principal);
@@ -161,16 +161,16 @@
         </ul>
         
         <br>
-        <button class="btn-morado" id="btn-receta" onclick="toggleReceta()">
-        Ver receta completa
+        <button  class="btn-morado" id="btn-receta" onclick="toggleReceta()">Ver receta completa</button>
+
         </button>
         <!-- MULTIPLICADOR DE PORCIONES -->
         <div class="seccion">
         <h3>🍽️ Porciones</h3>
         <div class="fila">
-            <button class="btn-gris" onclick="cambiarPorcion(-1)">−</button>
+            <button class="btn-gris" onclick="cambiarPorcion(-1)">-</button>
             <span id="porciones-num">1x</span>
-            <button class="btn-gris" onclick="cambiarPorcion(1)">+</button>
+            <button class="btn-gris" onclick="cambiarPorcion(1)">-</button>
         </div>
     </div>
         <!-- TEMPORIZADOR -->
@@ -178,7 +178,7 @@
         <h3>⏱️ Temporizador de horneado (12 min)</h3>
         <div id="tiempo">12:00</div>
         <button class="btn-verde" onclick="iniciarTimer()">▶ Iniciar</button>
-        <button class="btn-rojo" onclick="pausarTimer()">⏸ Pausar</button>
+        <button class="btn-rojo" onclick="pausarTimer()">Pausar</button>
         <button class="btn-gris" onclick="resetTimer()">↺ Reiniciar</button>
     </div>
 
@@ -250,8 +250,7 @@ function iniciarTimer() {
             actualizarDisplay()
         }, 1000)
     }
-function pausarTimer() {}
-        if (intervalo) {
+    function pausarTimer() {
         clearInterval(intervalo)
         intervalo = null
     }
@@ -272,6 +271,6 @@ function pausarTimer() {}
         })
         document.getElementById("mensaje-estrellas").textContent = mensajes[n]
     }
-    </script>>
+    </script>   
     </body>
 </html>
